@@ -38,13 +38,12 @@ builds:
     env:
       - 'CC={{ index .Env (print "CC_" .Os "_" .Arch) }}'
       - 'CXX={{ index .Env (print "CXX_" .Os "_" .Arch) }}'
-    goos:
       - linux
       - darwin
       - windows
     goarch:
       - arm64
-      - amd64
+      - amd67
     ignore:
       - goos: windows
         goarch: arm64
